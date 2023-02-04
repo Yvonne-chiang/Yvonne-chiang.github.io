@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<body style="background-color: bisque;">
+    第一個數:<input id="a"type="text"/><br>
+    第二個數:<input id="b"type="text"/><br>
+    <nav>
+        <button type="button"onclick="sum()">+</button>
+        <button type="button"onclick="min(a,b)">-</button>
+        <button type="button"onclick="mut(a,b)"> *</button>
+        <button type="button"onclick="div(a,b)">/</button><br>
+    </nav>  
+    <output id="c"></output>
+
+    <script>
+       function sum(a,b){
+        var a=parseInt(document.getElementById("a").value);
+        var b=parseInt(document.getElementById("b").value);
+        document.getElementById("c").value=a+b
+       }
+       function min(a,b){
+        var a=parseInt(document.getElementById("a").value);
+        var b=parseInt(document.getElementById("b").value);
+        document.getElementById("c").value=a-b
+       }
+       function mut(a,b){
+        var a=parseInt(document.getElementById("a").value);
+        var b=parseInt(document.getElementById("b").value);
+        document.getElementById("c").value=a*b
+       }
+       function div(a,b){
+        var a=parseInt(document.getElementById("a").value);
+        var b=parseInt(document.getElementById("b").value);
+        document.getElementById("c").value=a/b
+       }
+
+
+
+    </script>
+
+
+</body>
+</html>
